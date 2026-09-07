@@ -1,0 +1,189 @@
+{
+  "version": 1,
+  "channels": [
+    {
+      "name": "MiniMax-All-Free-Xkiro",
+      "provider": "xkiro",
+      "type": "openai",
+      "base_url": "https://api.xkiro.com",
+      "api_key_env": "XKIRO_API_KEY",
+
+      "models": [
+        "minimax/minimax-m3:free",
+        "minimax/minimax-m2.7:free",
+        "minimax/minimax-m2.7-highspeed:free",
+        "minimax/minimax-m2.5:free",
+        "minimax/minimax-m2.5-highspeed:free",
+        "minimax/minimax-m2.1:free",
+        "minimax/minimax-m2.1-highspeed:free",
+        "minimax/minimax-m2:free",
+        "xkiro-minimax"
+      ],
+
+      "group": "default",
+      "priority": 0,
+      "weight": 0,
+
+      "test_model": "minimax/minimax-m2.1:free",
+      "auto_ban": true
+    },
+    {
+      "name": "Mistral-All-Free-Xkiro",
+      "provider": "xkiro",
+      "type": "openai",
+      "base_url": "https://xkiro.com",
+      "api_key_env": "XKIRO_API_KEY",
+
+      "models": [
+        "mistralai/mistral-large-2512",
+        "mistralai/mistral-medium-3.5",
+        "mistralai/mistral-small-2603",
+        "mistralai/codestral-2508",
+        "mistralai/devstral-medium",
+        "mistralai/ministral-14b",
+        "mistralai/ministral-8b",
+        "mistralai/ministral-3b"
+      ],
+
+      "group": "default",
+      "priority": 0,
+      "weight": 0,
+      "auto_ban": true
+    },
+    {
+      "name": "DeepSeek-All-Free-Xkiro",
+      "provider": "xkiro",
+      "type": "openai",
+      "base_url": "https://xkiro.com",
+      "api_key_env": "XKIRO_API_KEY",
+
+      "models": [
+        "deepseek/deepseek-v4-pro",
+        "deepseek/deepseek-v4-flash",
+        "deepseek/deepseek-v3.2",
+        "deepseek/deepseek-chat-v3.1"
+      ],
+
+      "group": "default",
+      "priority": 0,
+      "weight": 0,
+      "auto_ban": true
+    },
+    {
+      "name": "GLM-All-Free-Unorouter",
+      "provider": "unorouter",
+      "type": "openai",
+      "base_url": "https://api.unorouter.com",
+      "api_key_env": "UNROUTER_API_KEY",
+      "models": [
+        "glm-5.3-flash-search:free",
+        "glm-5.3-flash-think-search:free",
+        "glm-5.3-flash-thinking:free",
+        "glm-5.3-flash:free",
+        "glm-5.3-search:free",
+        "glm-5.3-think-search:free",
+        "glm-5.3-thinking:free",
+        "glm-5.3:free",
+        "glm-5.2-search:free",
+        "glm-5.2-think-search:free",
+        "glm-5.2-thinking:free",
+        "glm-5.2:free",
+        "glm-image-1:free"
+      ],
+      "group": "default",
+      "priority": 0,
+      "weight": 0,
+      "auto_ban": true
+    },
+    {
+      "name": "Qween-All-Free-Unorouter",
+      "provider": "unorouter",
+      "type": "openai",
+      "base_url": "https://api.unorouter.com",
+      "api_key_env": "UNROUTER_API_KEY",
+      "models": [
+        "qwen3.6-27b:free",
+        "qwen-sea-lion-v4-32b-it:free",
+        "qwen2.5-vl-7b-instruct-awq:free"
+      ],
+      "group": "default",
+      "priority": 0,
+      "weight": 0,
+      "auto_ban": true
+    },
+    {
+      "name": "Nemotron-All-Free-Unorouter",
+      "provider": "unorouter",
+      "type": "openai",
+      "base_url": "https://api.unorouter.com",
+      "api_key_env": "UNROUTER_API_KEY",
+      "models": [
+        "nemotron-3.5-lightning:free",
+        "nemotron-3.5-lightning-30b-a3b:free",
+        "nemotron-3-ultra-550b-a55b:free",
+        "nemotron-3-nano-omni-30b-a3b-reasoning:free",
+        "nemotron-3-super-120b-a12b:free",
+        "nemotron-nano-12b-v2-vl:free",
+        "nemotron-nano-9b-v2:free",
+        "mistral-nemotron:free"
+      ],
+      "group": "default",
+      "priority": 0,
+      "weight": 0,
+      "auto_ban": true
+    },
+    {
+      "name": "Gemini-All-Free-Unorouter",
+      "provider": "unorouter",
+      "type": "openai",
+      "base_url": "https://api.unorouter.com",
+      "api_key_env": "UNROUTER_API_KEY",
+      "models": [
+        "gemini-robotics-er-2-preview:free",
+        "gemini-3.6-flash:free",
+        "gemini-3.5-flash-lite:free",
+        "diffusiongemma-26b-a4b-it:free",
+        "gemini-embedding-2:free",
+        "gemini-3.1-flash-lite:free",
+        "gemma-4-26b:free",
+        "gemma-4-31b-it:free",
+        "gemini-flash-lite-latest:free",
+        "gemini-flash-lite:free",
+        "gemini-embedding-001:free"
+      ],
+      "group": "default",
+      "priority": 0,
+      "weight": 0,
+      "auto_ban": true
+    },
+    {
+      "name": "LLAMA-All-Free-Unorouter",
+      "provider": "unorouter",
+      "type": "openai",
+      "base_url": "https://api.unorouter.com",
+      "api_key_env": "UNROUTER_API_KEY",
+      "models": [
+        "llama-3.2-11b-vision:free"
+      ],
+      "group": "default",
+      "priority": 0,
+      "weight": 0,
+      "auto_ban": true
+    },
+    {
+      "name": "Minimax-All-Free-Unorouter",
+      "provider": "unorouter",
+      "type": "openai",
+      "base_url": "https://api.unorouter.com",
+      "api_key_env": "UNROUTER_API_KEY",
+      "models": [
+        "minimax-m2.7:free",
+        "minimax-m3:free"
+      ],
+      "group": "default",
+      "priority": 0,
+      "weight": 0,
+      "auto_ban": true
+    }
+  ]
+}

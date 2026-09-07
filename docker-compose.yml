@@ -1,0 +1,14 @@
+services:
+  new-api:
+    image: calciumion/new-api:latest
+    container_name: new-api
+    restart: unless-stopped
+
+    ports:
+      - "3000:3000"
+
+    environment:
+      TZ: Asia/Jakarta
+
+    volumes:
+      - ./data:/data
