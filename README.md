@@ -330,4 +330,4 @@ A fully synchronized configuration should report only `SKIP` entries.
 
 ## License
 
-No license has been specified yet.
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
