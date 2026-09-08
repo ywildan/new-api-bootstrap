@@ -117,7 +117,7 @@
       "auto_ban": true
     },
         {
-      "name": "DeepSeek-V4-Free-Xkiro",
+      "name": "DeepSeek-V4-Free-Xkiro-Coding",
       "provider": "xkiro",
       "type": "openai",
       "base_url": "https://xkiro.com",
