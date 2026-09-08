@@ -166,7 +166,7 @@
         "glm-5.3-flash-search:free",
         "glm-5.3-flash-think-search:free",
         "glm-5.3-flash-thinking:free",
-        "glm-5.3-flash:free",
+        "flash",
         "glm-5.3-search:free",
         "glm-5.3-think-search:free",
         "glm-5.3-thinking:free",
@@ -177,9 +177,32 @@
         "glm-5.2:free",
         "glm-image-1:free"
       ],
+                  "model_mapping": {
+  "flash": "glm-5.3-flash:free"
+},
       "group": "default",
       "priority": 0,
-      "weight": 0,
+      "weight": 1,
+      "auto_ban": true
+    },
+                {
+      "name": "GLM-5.3-Free-Unorouter-Flash",
+      "provider": "unorouter",
+      "type": "openai",
+      "base_url": "https://api.unorouter.com",
+      "api_key_env": "UNROUTER_API_KEY",
+
+      "models": [
+        "flash"
+      ],
+
+      "model_mapping": {
+  "flash": "glm-5.3-flash-search:free"
+},
+
+      "group": "default",
+      "priority": 0,
+      "weight": 1,
       "auto_ban": true
     },
     {
