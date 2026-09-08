@@ -38,16 +38,20 @@
         "mistralai/mistral-large-2512",
         "mistralai/mistral-medium-3.5",
         "mistralai/mistral-small-2603",
-        "mistralai/codestral-2508",
+        "coding",
         "mistralai/devstral-medium",
         "mistralai/ministral-14b",
         "mistralai/ministral-8b",
         "mistralai/ministral-3b"
       ],
+      
+      "model_mapping": {
+  "coding": "mistralai/codestral-2508"
+},
 
       "group": "default",
       "priority": 0,
-      "weight": 0,
+      "weight": 1,
       "auto_ban": true
     },
     {
@@ -58,15 +62,19 @@
       "api_key_env": "XKIRO_API_KEY",
 
       "models": [
-        "deepseek/deepseek-v4-pro",
+        "coding",
         "deepseek/deepseek-v4-flash",
         "deepseek/deepseek-v3.2",
         "deepseek/deepseek-chat-v3.1"
       ],
+      
+      "model_mapping": {
+  "coding": "deepseek/deepseek-v4-pro"
+},
 
       "group": "default",
       "priority": 0,
-      "weight": 0,
+      "weight": 1,
       "auto_ban": true
     },
     {

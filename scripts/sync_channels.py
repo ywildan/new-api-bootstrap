@@ -101,6 +101,7 @@ def desired_state(channel):
         "priority": channel.get("priority", 0),
         "weight": channel.get("weight", 0),
         "auto_ban": bool(channel.get("auto_ban", True)),
+        "model_mapping": channel.get("model_mapping", {}),
     }
 
     if "test_model" in channel:
@@ -115,6 +116,16 @@ def current_state(channel):
     if isinstance(models, str):
         models = [x for x in models.split(",") if x]
 
+        model_mapping = channel.get("model_mapping")
+
+    if model_mapping is None:
+        model_mapping = {}
+    elif isinstance(model_mapping, str):
+        try:
+            model_mapping = json.loads(model_mapping) if model_mapping else {}
+        except json.JSONDecodeError:
+            model_mapping = {}
+
     return {
         "name": channel.get("name", ""),
         "type": channel.get("type"),
@@ -125,6 +136,7 @@ def current_state(channel):
         "weight": channel.get("weight", 0),
         "auto_ban": bool(channel.get("auto_ban", 0)),
         "test_model": channel.get("test_model"),
+        "model_mapping": model_mapping,
     }
 
 
