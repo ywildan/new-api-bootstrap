@@ -182,6 +182,12 @@ def build_payload(channel):
     if "test_model" in channel:
         payload["test_model"] = channel["test_model"]
 
+    if "model_mapping" in channel:
+        payload["model_mapping"] = json.dumps(
+            channel["model_mapping"],
+            separators=(",", ":"),
+        )
+
     return payload
 
 

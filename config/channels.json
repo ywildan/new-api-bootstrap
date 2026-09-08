@@ -81,6 +81,26 @@
       "weight": 1,
       "auto_ban": true
     },
+        {
+      "name": "DeepSeek-V4-Free-Xkiro",
+      "provider": "xkiro",
+      "type": "openai",
+      "base_url": "https://xkiro.com",
+      "api_key_env": "XKIRO_API_KEY",
+
+      "models": [
+        "coding"
+      ],
+
+      "model_mapping": {
+  "coding": "deepseek/deepseek-v4-flash"
+},
+
+      "group": "default",
+      "priority": 0,
+      "weight": 1,
+      "auto_ban": true
+    },
     {
       "name": "GLM-All-Free-Unorouter",
       "provider": "unorouter",
