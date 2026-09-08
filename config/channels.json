@@ -81,6 +81,41 @@
       "weight": 1,
       "auto_ban": true
     },
+    {
+      "name": "Qwen-All-Free-Xkiro",
+      "provider": "xkiro",
+      "type": "openai",
+      "base_url": "https://xkiro.com",
+      "api_key_env": "XKIRO_API_KEY",
+
+      "models": [
+        "qwen/qwen3.8-max:free",
+        "qwen/qwen3.7-max:free",
+        "qwen/qwen3.7-plus:free",
+        "qwen/qwen3.6-plus:free",
+        "qwen/qwen3.6-max-preview:free",
+        "qwen/qwen3.6-27b:free",
+        "qwen/qwen3.5-plus:free",
+        "qwen/qwen3.5-omni-plus:free",
+        "qwen/qwen3.6-35b-a3b:free",
+        "qwen/qwen3-max:free",
+        "qwen/qwen-plus-2025-07-28:free",
+        "qwen/qwen3-vl-plus:free",
+        "qwen/qwen3-omni-flash:free",
+        "coding",
+        "qwen/qwen3.5-397b-a17b:free",
+        "qwen/qwen3.5-flash:free",
+        "qwen/qwen3.5-omni-flash:free"
+      ],
+
+      "model_mapping": {
+  "coding": "qwen/qwen3-coder-plus:free"
+},
+      "group": "default",
+      "priority": 0,
+      "weight": 0,
+      "auto_ban": true
+    },
         {
       "name": "DeepSeek-V4-Free-Xkiro",
       "provider": "xkiro",
