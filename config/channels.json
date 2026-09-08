@@ -116,6 +116,26 @@
       "weight": 1,
       "auto_ban": true
     },
+            {
+      "name": "Qween-3.8-Max-Free-Xkiro-Coding",
+      "provider": "xkiro",
+      "type": "openai",
+      "base_url": "https://xkiro.com",
+      "api_key_env": "XKIRO_API_KEY",
+
+      "models": [
+        "coding"
+      ],
+
+      "model_mapping": {
+  "coding": "qwen/qwen3.8-max:free"
+},
+
+      "group": "default",
+      "priority": 0,
+      "weight": 1,
+      "auto_ban": true
+    },
         {
       "name": "DeepSeek-V4-Free-Xkiro-Coding",
       "provider": "xkiro",
