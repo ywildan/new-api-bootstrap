@@ -228,7 +228,7 @@
       "models": [
         "gemini-robotics-er-2-preview:free",
         "gemini-3.6-flash:free",
-        "gemini-3.5-flash-lite:free",
+        "flash",
         "diffusiongemma-26b-a4b-it:free",
         "gemini-embedding-2:free",
         "gemini-3.1-flash-lite:free",
@@ -238,9 +238,34 @@
         "gemini-flash-lite:free",
         "gemini-embedding-001:free"
       ],
+
+            "model_mapping": {
+  "flash": "gemini-3.5-flash-lite:free"
+},
+
       "group": "default",
       "priority": 0,
       "weight": 0,
+      "auto_ban": true
+    },
+            {
+      "name": "Gemini-3.6-Free-Unorouter-Flash",
+      "provider": "unorouter",
+      "type": "openai",
+      "base_url": "https://api.unorouter.com",
+      "api_key_env": "UNROUTER_API_KEY",
+
+      "models": [
+        "flash"
+      ],
+
+      "model_mapping": {
+  "flash": "gemini-3.6-flash:free"
+},
+
+      "group": "default",
+      "priority": 0,
+      "weight": 1,
       "auto_ban": true
     },
     {
