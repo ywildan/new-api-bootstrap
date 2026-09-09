@@ -319,6 +319,21 @@
       "priority": 0,
       "weight": 0,
       "auto_ban": true
-    }
+    },
+    {
+    "name": "Nex-GAI-Free-Openrouter",
+    "provider": "openrouter",
+    "type": "openai",
+    "base_url": "https://openrouter.ai/api",
+    "api_key_env": "OPENROUTER_API_KEY",
+    "models": [
+    "nex-agi/nex-n2.5-mini:free",
+    "nex-agi/nex-n2.5-pro:free"
+    ],
+    "group": "default",
+    "priority": 0,
+    "weight": 1,
+    "auto_ban": true
+  }
   ]
 }
