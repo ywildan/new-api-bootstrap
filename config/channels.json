@@ -7,7 +7,6 @@
       "type": "openai",
       "base_url": "https://api.xkiro.com",
       "api_key_env": "XKIRO_API_KEY",
-
       "models": [
         "coding",
         "minimax/minimax-m2.7:free",
@@ -19,15 +18,12 @@
         "minimax/minimax-m2:free",
         "xkiro-minimax"
       ],
-  
       "model_mapping": {
-  "coding": "minimax/minimax-m3:free"
-},
-
+        "coding": "minimax/minimax-m3:free"
+      },
       "group": "default",
       "priority": 0,
       "weight": 1,
-
       "test_model": "minimax/minimax-m2.1:free",
       "auto_ban": true
     },
@@ -37,7 +33,6 @@
       "type": "openai",
       "base_url": "https://xkiro.com",
       "api_key_env": "XKIRO_API_KEY",
-
       "models": [
         "mistralai/mistral-large-2512",
         "mistralai/mistral-medium-3.5",
@@ -48,11 +43,9 @@
         "mistralai/ministral-8b",
         "mistralai/ministral-3b"
       ],
-      
       "model_mapping": {
-  "coding": "mistralai/codestral-2508"
-},
-
+        "coding": "mistralai/codestral-2508"
+      },
       "group": "default",
       "priority": 0,
       "weight": 1,
@@ -64,18 +57,15 @@
       "type": "openai",
       "base_url": "https://xkiro.com",
       "api_key_env": "XKIRO_API_KEY",
-
       "models": [
         "coding",
         "deepseek/deepseek-v4-flash",
         "deepseek/deepseek-v3.2",
         "deepseek/deepseek-chat-v3.1"
       ],
-      
       "model_mapping": {
-  "coding": "deepseek/deepseek-v4-pro"
-},
-
+        "coding": "deepseek/deepseek-v4-pro"
+      },
       "group": "default",
       "priority": 0,
       "weight": 1,
@@ -87,7 +77,6 @@
       "type": "openai",
       "base_url": "https://xkiro.com",
       "api_key_env": "XKIRO_API_KEY",
-
       "models": [
         "qwen/qwen3.8-max:free",
         "qwen/qwen3.7-max:free",
@@ -107,50 +96,43 @@
         "qwen/qwen3.5-flash:free",
         "qwen/qwen3.5-omni-flash:free"
       ],
-
       "model_mapping": {
-  "coding": "qwen/qwen3-coder-plus:free"
-},
+        "coding": "qwen/qwen3-coder-plus:free"
+      },
       "group": "default",
       "priority": 0,
       "weight": 1,
       "auto_ban": true
     },
-            {
+    {
       "name": "Qween-3.8-Max-Free-Xkiro-Coding",
       "provider": "xkiro",
       "type": "openai",
       "base_url": "https://xkiro.com",
       "api_key_env": "XKIRO_API_KEY",
-
       "models": [
         "coding"
       ],
-
       "model_mapping": {
-  "coding": "qwen/qwen3.8-max:free"
-},
-
+        "coding": "qwen/qwen3.8-max:free"
+      },
       "group": "default",
       "priority": 0,
       "weight": 1,
       "auto_ban": true
     },
-        {
+    {
       "name": "DeepSeek-V4-Free-Xkiro-Coding",
       "provider": "xkiro",
       "type": "openai",
       "base_url": "https://xkiro.com",
       "api_key_env": "XKIRO_API_KEY",
-
       "models": [
         "coding"
       ],
-
       "model_mapping": {
-  "coding": "deepseek/deepseek-v4-flash"
-},
-
+        "coding": "deepseek/deepseek-v4-flash"
+      },
       "group": "default",
       "priority": 0,
       "weight": 1,
@@ -177,29 +159,26 @@
         "glm-5.2:free",
         "glm-image-1:free"
       ],
-                  "model_mapping": {
-  "flash": "glm-5.3-flash:free"
-},
+      "model_mapping": {
+        "flash": "glm-5.3-flash:free"
+      },
       "group": "default",
       "priority": 0,
       "weight": 1,
       "auto_ban": true
     },
-                {
+    {
       "name": "GLM-5.3-Free-Unorouter-Flash",
       "provider": "unorouter",
       "type": "openai",
       "base_url": "https://api.unorouter.com",
       "api_key_env": "UNROUTER_API_KEY",
-
       "models": [
         "flash"
       ],
-
       "model_mapping": {
-  "flash": "glm-5.3-flash-search:free"
-},
-
+        "flash": "glm-5.3-flash-search:free"
+      },
       "group": "default",
       "priority": 0,
       "weight": 1,
@@ -261,31 +240,26 @@
         "gemini-flash-lite:free",
         "gemini-embedding-001:free"
       ],
-
-            "model_mapping": {
-  "flash": "gemini-3.5-flash-lite:free"
-},
-
+      "model_mapping": {
+        "flash": "gemini-3.5-flash-lite:free"
+      },
       "group": "default",
       "priority": 0,
       "weight": 0,
       "auto_ban": true
     },
-            {
+    {
       "name": "Gemini-3.6-Free-Unorouter-Flash",
       "provider": "unorouter",
       "type": "openai",
       "base_url": "https://api.unorouter.com",
       "api_key_env": "UNROUTER_API_KEY",
-
       "models": [
         "flash"
       ],
-
       "model_mapping": {
-  "flash": "gemini-3.6-flash:free"
-},
-
+        "flash": "gemini-3.6-flash:free"
+      },
       "group": "default",
       "priority": 0,
       "weight": 1,
@@ -321,19 +295,34 @@
       "auto_ban": true
     },
     {
-    "name": "Nex-GAI-Free-Openrouter",
-    "provider": "openrouter",
-    "type": "openai",
-    "base_url": "https://openrouter.ai/api",
-    "api_key_env": "OPENROUTER_API_KEY",
-    "models": [
-    "nex-agi/nex-n2.5-mini:free",
-    "nex-agi/nex-n2.5-pro:free"
-    ],
-    "group": "default",
-    "priority": 0,
-    "weight": 1,
-    "auto_ban": true
-  }
+      "name": "Nex-GAI-Free-Openrouter",
+      "provider": "openrouter",
+      "type": "openai",
+      "base_url": "https://openrouter.ai/api",
+      "api_key_env": "OPENROUTER_API_KEY",
+      "models": [
+        "nex-agi/nex-n2.5-mini:free",
+        "nex-agi/nex-n2.5-pro:free"
+      ],
+      "group": "default",
+      "priority": 0,
+      "weight": 1,
+      "auto_ban": true
+    },
+    {
+      "name": "Ling-3.0-Free-Openrouter",
+      "provider": "openrouter",
+      "type": "openai",
+      "base_url": "https://openrouter.ai/api",
+      "api_key_env": "OPENROUTER_API_KEY",
+      "models": [
+        "inclusionai/ling-3.0-flash-sante:free",
+        "inclusionai/ling-3.0-flash-fin:free"
+      ],
+      "group": "default",
+      "priority": 0,
+      "weight": 1,
+      "auto_ban": true
+    }
   ]
 }

@@ -328,6 +328,29 @@ Run the dry-run again afterward:
 
 A fully synchronized configuration should report only `SKIP` entries.
 
+## Interactive Channel Manager
+
+A CLI tool for safely managing `config/channels.json` without manual JSON editing.
+
+Usage:
+
+```bash
+python scripts/channel_manager.py
+```
+
+The editor modifies **only** `config/channels.json`. It never calls the New API and never runs apply/sync automatically. API secrets remain in `.env`; the manager only stores `api_key_env` variable names.
+
+### Safe Workflow
+
+1. Run `python scripts/channel_manager.py`
+2. Validate configuration
+3. Run `./scripts/sync_channels.sh` (dry run)
+4. Review changes
+5. Run `./scripts/sync_channels.sh --apply`
+6. Run `./scripts/sync_channels.sh` again to verify
+
+All writes use atomic replacement (`os.replace`) with a backup (`config/channels.json.bak`). Existing fields are always preserved.
+
 ## License
 
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
