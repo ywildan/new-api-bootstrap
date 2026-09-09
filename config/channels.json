@@ -323,6 +323,27 @@
       "priority": 0,
       "weight": 1,
       "auto_ban": true
+    },
+    {
+      "name": "NVIDIA-Free-Openrouter",
+      "provider": "openrouter",
+      "type": "openai",
+      "base_url": "https://openrouter.ai/api",
+      "api_key_env": "OPENROUTER_API_KEY",
+      "models": [
+        "nvidia/nemotron-3-ultra-550b-a55b:free",
+        "nvidia/nemotron-3.5-lightning:free",
+        "nvidia/nemotron-3-super-120b-a12b:free",
+        "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+        "nvidia/llama-nemotron-rerank-vl-1b-v2:free",
+        "nvidia/nemotron-3.5-content-safety:free",
+        "nvidia/llama-nemotron-embed-vl-1b-v2:free",
+        "nvidia/nemotron-3-embed-1b:free"
+      ],
+      "group": "default",
+      "priority": 0,
+      "weight": 1,
+      "auto_ban": true
     }
   ]
 }
