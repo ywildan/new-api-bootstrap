@@ -344,6 +344,35 @@
       "priority": 0,
       "weight": 1,
       "auto_ban": true
+    },
+    {
+      "name": "Google-Fast-Free-Openrouter",
+      "provider": "openrouter",
+      "type": "openai",
+      "base_url": "https://openrouter.ai/api",
+      "api_key_env": "OPENROUTER_API_KEY",
+      "models": [
+        "google/gemma-4-31b-it:free",
+        "google/gemma-4-26b-a4b-it:free"
+      ],
+      "group": "default",
+      "priority": 0,
+      "weight": 1,
+      "auto_ban": true
+    },
+    {
+      "name": "Inkling-Small-Free-Openrouter",
+      "provider": "openrouter",
+      "type": "openai",
+      "base_url": "https://openrouter.ai/api",
+      "api_key_env": "OPENROUTER_API_KEY",
+      "models": [
+        "thinkingmachines/inkling-small:free"
+      ],
+      "group": "default",
+      "priority": 0,
+      "weight": 1,
+      "auto_ban": true
     }
   ]
 }
